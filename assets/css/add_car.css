@@ -1,0 +1,16 @@
+.main_img{
+	position: relative;
+}
+
+.main_img span {
+    position: absolute;
+    bottom: 0;
+}
+.other_img{
+	position: relative;
+}
+
+.other_img span {
+    position: absolute;
+    bottom: 0;
+}
