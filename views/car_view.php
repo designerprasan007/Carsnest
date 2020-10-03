@@ -35,11 +35,6 @@ foreach ($single_car as $key) {
 			    <p>kms_driven: <?php echo $car['kms_driven']; ?></p>
 			    <p>fuel_type: <?php echo $car['fuel_type']; ?></p>
 			    <p>transmission: <?php echo $car['transmission']; ?></p>
-			   <!--  <div class="text-center">
-			    	<a href="car_view.php?car_id=<?php echo $car['id']; ?>">
-			    		<button class="btn btn-success btn-sm">View</button>
-			    	</a>
-			  	</div> -->
 			  </div>
 			</div>	
 		<?php endforeach; ?>

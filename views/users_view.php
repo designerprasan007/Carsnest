@@ -14,6 +14,26 @@ $all_car = All_Car();
 	<link rel="stylesheet" type="text/css" href="../assets/css/add_car.css">
 	</head>
 	<body>
+		<form>
+		  <div class="form-row">
+		    <div class="col">
+		      <input type="text" class="form-control car_name" placeholder="Car Name">
+		    </div>
+		    <div class="col">
+	    	  <select id="inputState" class="form-control car_type">
+		        <option value="sedan">Sedan</option>
+		        <option value="suv">SUV</option>
+		        <option value="tuv">TUV</option>
+		      </select>
+		    </div>
+		     <div class="col">
+		      <input type="number" class="form-control car_year" placeholder="Year">
+		    </div>
+		    <div class="col">
+		    	<button class="btn btn-success search_car" type="button" name="search">Search</button>
+		    </div>
+		  </div>
+		</form>
 		<?php foreach ($all_car as $car): ?>
 			<div class="card py-5" style="width: 18rem;">
 			  <img src="../assets/img/<?php echo $car['main_img'] ?>" class="card-img-top" alt="...">
@@ -34,5 +54,15 @@ $all_car = All_Car();
 			  </div>
 			</div>	
 		<?php endforeach; ?>
+
+		<!-- scripts -->
+		<!-- bootstrap -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!-- jquery script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- own script -->
+		<script type="text/javascript" src="../assets/js/users_view.js"></script>
 	</body>
 </html>

@@ -1,9 +1,9 @@
 $('.main_img').on('click', function(){
-	 document.getElementById("main_img").click();
+	 $("#main_img").click();
 })
 
 $('.other_img').on('click', function(){
-	 document.getElementById("other_img").click();
+	 $("#other_img").click();
 })
 				    		
 
